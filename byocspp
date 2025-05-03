@@ -1,0 +1,206 @@
+<!--Codecademy "Challenge Project: Build Your Own Cheat Sheet", personal project-->
+
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+  <style id="__wb_font_loader">
+    /* Optimist Extra Light */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLtIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_XLtIt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    /* Optimist Light */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Lt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Lt.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_LtIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_LtIt.woff') format('woff');
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    /* Optimist Regular */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Rg.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Rg.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_It.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_It.woff') format('woff');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    /* Optimist SemiBold */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBd.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBd.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBdIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_SBdIt.woff') format('woff');
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    /* Optimist Bold */
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Bd.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_Bd.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Optimist';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_BdIt.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/Optimist_W_BdIt.woff') format('woff');
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Circular Pro */
+    @font-face {
+      font-family: 'Circular-Pro-Book';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-book.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-book.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Blackitalic';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-blackitalic.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-blackitalic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Black';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-black.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-black.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Circular-Pro-Bookitalic';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-bookitalic.woff2') format('woff2'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/lineto-circular-pro-bookitalic.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Wikibuy Icon Font */
+    @font-face {
+      font-family: 'wikibuy-iconfont';
+      src:
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/wikibuy-iconfont.woff') format('woff'),
+        url('chrome-extension://nenlahapcbofgnanklpelkaejcehkggg/assets/font/wikibuy-iconfont.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style></head>
+  <body data-new-gr-c-s-check-loaded="14.1233.0" data-gr-ext-installed="">
+    <h1>HTML Table Reference</h1>
+    <h2>Table Tags</h2>
+    <table>
+      <thead>
+        <tr><th>Tag</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="code">&lt;table&gt;</span></td>
+          <td>Table</td>
+          <td>The wrapper element for all HTML tables.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;thead&gt;</span></td>
+          <td>Table Head</td>
+          <td>The set of rows defining the column headers in a table.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;tbody&gt;</span></td>
+          <td>Table Body</td>
+          <td>The set of rows containing actual table data.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;tr&gt;</span></td>
+          <td>Table Row</td>
+          <td>The table row container.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;td&gt;</span></td>
+          <td>Table Data</td>
+          <td>The table row container.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;tfoot&gt;</span></td>
+          <td>Table Foot</td>
+          <td>The set of rows defining the footer in a table.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Table Attributes</h2>
+    <table>
+      <thead>
+        <tr><th>Attribute</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+            <td><span class="code">colspan</span></td> 
+            <td>Column Span</td>
+            <td>Defines how many columns a td element should span.</td>
+          </tr>
+        <tr>
+          <td><span class="code">rowspan</span></td>
+          <td>Row Span</td>
+          <td>Defines how many rows a td element should span.</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
