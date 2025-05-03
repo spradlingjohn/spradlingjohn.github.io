@@ -1,0 +1,48 @@
+<!-- CSS from first week poject from BYOCS from Codecademy --> 
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+html {
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-size: 18px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4D00FF;
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #10b0d8;
+  margin-top: 2rem;
+}
+
+table {
+  margin: 2rem auto;
+  width: 80%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: 700;
+}
+
+.code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
