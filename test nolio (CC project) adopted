@@ -1,0 +1,187 @@
+index.html ----------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nolio Design System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Nolio Design System</h1>
+    <p>Guidelines & components for Nolio web products.</p>
+  </header>
+
+  <nav>
+    <a href="#colors">Colors</a>
+    <a href="#fonts">Fonts</a>
+    <a href="#text">Text Styles</a>
+    <a href="#components">Components</a>
+  </nav>
+
+  <section id="colors">
+    <h2>🎨 Color Palette</h2>
+    <div class="color-swatch primary">
+      <p>Primary Indigo</p>
+      <p>#4B0082</p>
+      <p>For main CTAs and highlights</p>
+    </div>
+    <div class="color-swatch accent">
+      <p>Accent Lavender</p>
+      <p>#9370DB</p>
+      <p>For secondary actions and UI accents</p>
+    </div>
+    <div class="color-swatch neutral">
+      <p>Neutral Gray</p>
+      <p>#F5F5F5</p>
+      <p>Background and container elements</p>
+    </div>
+  </section>
+
+  <section id="fonts">
+    <h2>🔤 Fonts</h2>
+    <div class="font-sample inter">
+      <p class="plain">Inter - Plain: The quick brown fox jumps over the lazy dog.</p>
+      <p class="bold">Inter - Bold: The quick brown fox jumps over the lazy dog.</p>
+    </div>
+    <div class="font-sample dm-serif">
+      <p class="plain">DM Serif Display - Plain: The quick brown fox jumps over the lazy dog.</p>
+      <p class="italic">DM Serif Display - Italic: The quick brown fox jumps over the lazy dog.</p>
+    </div>
+  </section>
+
+  <section id="text">
+    <h2>📑 Text Styles</h2>
+    <div>
+      <h1>Main Heading (h1)</h1>
+      <p>font-family: DM Serif Display; font-size: 36px; font-weight: 700;</p>
+    </div>
+    <div>
+      <h2>Subheading (h2)</h2>
+      <p>font-family: Inter; font-size: 24px; font-weight: 600;</p>
+    </div>
+    <div>
+      <p>Body Text</p>
+      <p>font-family: Inter; font-size: 16px; font-weight: 400;</p>
+    </div>
+  </section>
+
+  <section id="components">
+    <h2>🧩 Components</h2>
+    <button class="btn-primary">Primary Button</button>
+    <button class="btn-secondary">Secondary Button</button>
+    <div class="card">
+      <h3>Card Title</h3>
+      <p>This is a sample card. Use for modular content or SaaS dashboard widgets.</p>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+style.css ----------------------------------------------------------------------------->
+
+/* BASE STYLES */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F5F5;
+  color: #222222;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #4B0082;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* COLORS SECTION */
+.color-swatch {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  color: #fff;
+  max-width: 400px;
+}
+
+.primary { background-color: #4B0082; }
+.accent { background-color: #9370DB; }
+.neutral { background-color: #CCCCCC; color: #000; }
+
+/* FONTS SECTION */
+.font-sample {
+  margin-bottom: 20px;
+}
+
+.inter { font-family: 'Inter', sans-serif; }
+.dm-serif { font-family: 'DM Serif Display', serif; }
+
+.bold { font-weight: 700; }
+.italic { font-style: italic; }
+
+/* TEXT STYLES */
+#text div {
+  margin-bottom: 20px;
+}
+
+/* COMPONENTS */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4B0082;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #360062;
+}
+
+.btn-secondary {
+  background-color: #9370DB;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #6a4aa3;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 350px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+
